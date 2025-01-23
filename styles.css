@@ -8,10 +8,14 @@
   outline: none;
   border: none;
 }
-
+.btn{
+    border: 1px solid gray;
+    padding: 1rem 2rem;
+    font-weight: bold;
+}
 header {
     background-color: #F3F3F3;
-
+padding-bottom: 7rem;
 }
 nav {
   display: flex;
@@ -33,4 +37,65 @@ nav {
 .menu_item a{
     font-size: 1.2rem;
     color: #000;
+}
+.banner_title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+.banner{
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner_des{
+    max-width: 50%;
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+.dis_price{
+    margin-bottom: 0.6rem;
+}
+.banner_des span{
+    font-weight: bold;
+}
+span{
+    font-weight: bold;
+}
+.offerd_price{
+    margin-bottom: 2rem;
+}
+@media screen and (max-width:576px) {
+    .banner{
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .banner_btn{
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    .offerd_price{
+        text-align: center;
+    }
+
+    .banner_des{
+        min-width: 100%;
+        text-align: center;
+    }
+    .banner_title{
+        text-align: center;
+    }
+    .dis_price{
+        text-align: center;
+    }
+    .banner_image{
+        max-width: 80%;
+    }
+    .banner_image img{
+        width: 100%;
+        margin-top: 3rem;
+    }
 }
